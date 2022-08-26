@@ -11,7 +11,7 @@ pipeline {
                 sh '''
                 mvn clean install
                 mkdir -p /home/jenkins/project-wars
-                mv ./target*.war /home/jenkins/project-wars/project-${BUILD_NUMBER}.war
+                mv ./target/*.war /home/jenkins/project-wars/project-${BUILD_NUMBER}.war
                 '''
             }
         }
